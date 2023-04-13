@@ -25,7 +25,15 @@ export function Filter() {
         ))}
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <Button size="small" style={{ fontWeight: "bold" }}>
+        <Button
+          size="middle"
+          style={{
+            backgroundColor: "#fffff0",
+            color: "#0e0e2b",
+            borderColor: "#0e0e2b",
+            fontWeight: "bold",
+          }}
+        >
           Clear filters
         </Button>
       </div>

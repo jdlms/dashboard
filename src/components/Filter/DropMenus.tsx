@@ -31,7 +31,7 @@ export function DropMenus({ item }: DropMenusProps) {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <span style={{ fontWeight: 600, fontSize: "12px", marginBottom: "5px" }}>{item.title}</span>
-      <Dropdown menu={{ items }}>
+      <Dropdown menu={{ items }} >
         <a onClick={(e) => e.preventDefault()}>
           <Space>
             <span style={{ fontSize: "12px" }}>{item.placeholder}</span>

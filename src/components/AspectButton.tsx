@@ -16,7 +16,7 @@ export function AspectButton({ displayReviews, setDisplayReviews }) {
           }}
           onClick={handleClick}
         >
-          Click to view ratings <LikeOutlined />
+          Click to view reviews <LikeOutlined />
         </Button>
       ) : (
         <Button
@@ -28,7 +28,7 @@ export function AspectButton({ displayReviews, setDisplayReviews }) {
           }}
           onClick={handleClick}
         >
-          View Reviews <BarChartOutlined />
+          Click to view ratings <BarChartOutlined />
         </Button>
       )}
     </Space>

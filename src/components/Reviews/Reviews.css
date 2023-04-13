@@ -1,0 +1,25 @@
+/* span {
+  display: inline;
+} */
+
+.review-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.star-number {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.review-bar-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.bold-number {
+  font-weight: bold;
+}
