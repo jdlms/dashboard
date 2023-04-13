@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<AspectScores />} />
-        <Route path="benchmark" element={<Benchmark />} />
+        <Route path="/benchmark" element={<Benchmark />} />
       </Route>
     </Routes>
   );

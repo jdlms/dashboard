@@ -11,7 +11,7 @@ body {
 }
 
 .nav-wrapper {
-  width: 15vw;
+  width: 20vw;
   margin: 2px;
   background-color: rgb(14, 14, 43);
   border-radius: 1%;
@@ -19,6 +19,6 @@ body {
 
 .content-wrapper {
   flex: 1;
-  margin: 20px;
+  margin: 25px;
   overflow-y: auto;
 }
