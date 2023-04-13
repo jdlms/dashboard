@@ -14,17 +14,17 @@ export function Settings() {
       }}
     >
       <Space>
-        <button className="custom-button">
+        <button>
           <DashboardOutlined /> Change Dashboard
         </button>
       </Space>
       <Space>
-        <button className="custom-button">
-          <EditOutlined /> Logout
+        <button>
+          <EditOutlined /> Edit subscription
         </button>
       </Space>
       <Space>
-        <button className="custom-button">
+        <button>
           <LogoutOutlined /> Logout
         </button>
       </Space>
