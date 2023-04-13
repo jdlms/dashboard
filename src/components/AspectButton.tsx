@@ -9,28 +9,26 @@ export function AspectButton({ displayReviews, setDisplayReviews }) {
       {!displayReviews ? (
         <Button
           style={{
-            backgroundColor: "#0e0e2b",
-            color: "#fffff0",
+            backgroundColor: "#fffff0",
+            color: "#0e0e2b",
             borderColor: "#0e0e2b",
             fontWeight: "bold",
           }}
           onClick={handleClick}
         >
-          View Ratings
-          <LikeOutlined />
+          Click to view ratings <LikeOutlined />
         </Button>
       ) : (
         <Button
           style={{
-            backgroundColor: "#0e0e2b",
-            color: "#fffff0",
+            backgroundColor: "#fffff0",
+            color: "#0e0e2b",
             borderColor: "#0e0e2b",
             fontWeight: "bold",
           }}
           onClick={handleClick}
         >
-          View Reviews
-          <BarChartOutlined />
+          View Reviews <BarChartOutlined />
         </Button>
       )}
     </Space>
