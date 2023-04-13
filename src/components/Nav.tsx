@@ -3,7 +3,7 @@ import "../styles/Nav.css";
 export function Nav() {
   return (
     <>
-      <h2>ReQiew</h2>
+      <h2 style={{ color: "white" }}>ReQiew</h2>
     </>
   );
 }
