@@ -6,11 +6,11 @@ type DropMenuItem = {
   title: string;
   placeholder: string;
   selection: string[];
-}
+};
 
 type DropMenusProps = {
   item: DropMenuItem;
-}
+};
 
 const items: MenuProps["items"] = [
   {
@@ -30,11 +30,11 @@ const items: MenuProps["items"] = [
 export function DropMenus({ item }: DropMenusProps) {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <span style={{ fontWeight: 600, fontSize: "1rem" }}>{item.title}</span>
+      <span style={{ fontWeight: 600, fontSize: "12px", marginBottom: "5px" }}>{item.title}</span>
       <Dropdown menu={{ items }}>
         <a onClick={(e) => e.preventDefault()}>
           <Space>
-            <span style={{ fontSize: "smaller" }}>{item.placeholder}</span>
+            <span style={{ fontSize: "12px" }}>{item.placeholder}</span>
             <DownOutlined />
           </Space>
         </a>

@@ -17,12 +17,7 @@ export function Filter() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          width: "400px",
-          paddingLeft: "10px",
-          borderLeft: "solid 1px black",
-
-          paddingRight: "10px",
-          borderRight: "solid 1px black",
+          width: "350px",
         }}
       >
         {spans.map((item) => (
@@ -30,7 +25,9 @@ export function Filter() {
         ))}
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
-        <Button size="small">Clear filters</Button>
+        <Button size="small" style={{ fontWeight: "bold" }}>
+          Clear filters
+        </Button>
       </div>
     </div>
   );

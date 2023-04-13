@@ -14,7 +14,7 @@ type SpansProps = {
 export function Spans({ item }: SpansProps) {
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "150px" }}>
-      <span style={{ display: "inline", fontWeight: 600, fontSize: "1rem", alignSelf: "center" }}>
+      <span style={{ display: "inline", fontWeight: 600, fontSize: "12px", alignSelf: "center" }}>
         {item.title}
       </span>
       <div
@@ -23,11 +23,11 @@ export function Spans({ item }: SpansProps) {
           flexDirection: "row",
           justifyContent: "space-between",
           width: "150px",
-          marginTop: "7px",
+          marginTop: "12px",
         }}
       >
-        <span style={{ fontSize: ".6rem" }}>{item.rangeBegin}</span>
-        <span style={{ fontSize: ".6rem" }}>{item.rangeEnd}</span>
+        <span style={{ fontSize: "10px" }}>{item.rangeBegin}</span>
+        <span style={{ fontSize: "10px" }}>{item.rangeEnd}</span>
       </div>
       <Slider className="slider" tooltip={{ formatter: null }} />
     </div>
