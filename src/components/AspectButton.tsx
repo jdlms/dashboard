@@ -1,7 +1,12 @@
 import { BarChartOutlined, LikeOutlined } from "@ant-design/icons";
 import { Button, Space } from "antd";
 
-export function AspectButton({ displayReviews, setDisplayReviews }) {
+interface AspectButtonProps {
+  displayReviews: boolean;
+  setDisplayReviews: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function AspectButton({ displayReviews, setDisplayReviews }: AspectButtonProps) {
   const handleClick = () => setDisplayReviews(!displayReviews);
 
   return (
