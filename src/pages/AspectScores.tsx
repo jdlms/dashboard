@@ -10,7 +10,7 @@ export function AspectScores() {
   return (
     <div>
       <Filter />
-      <h2>Aspect-based scoring : BBQ</h2>
+      <h2 style={{ color: "#0e0e2b", display: "inline" }}>Aspect-based scoring : BBQ</h2>
       <AspectButton displayReviews={displayReviews} setDisplayReviews={setDisplayReviews} />
       {!displayReviews ? <Rating /> : <Reviews />}
     </div>
