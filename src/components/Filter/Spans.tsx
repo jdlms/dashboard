@@ -23,7 +23,7 @@ export function Spans({ item }: SpansProps) {
           flexDirection: "row",
           justifyContent: "space-between",
           width: "150px",
-          marginTop: "12px",
+          // marginTop: "12px",
         }}
       >
         <span style={{ fontSize: "10px" }}>{item.rangeBegin}</span>

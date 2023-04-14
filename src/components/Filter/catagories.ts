@@ -1,5 +1,5 @@
 export const catagories = [
-  { title: "Brand", placeholder: "All brands", selection: ["Option 1", "Option 2", "Option 3"] },
+  { title: "Brand", placeholder: "Weber", selection: ["Option 2", "Option 3", "Option 4"] },
   { title: "Device", placeholder: "All devices", selection: ["Option 1", "Option 2", "Option 3"] },
   { title: "Model", placeholder: "All models", selection: ["Option 1", "Option 2", "Option 3"] },
 ];
@@ -9,4 +9,18 @@ export const spans = [
   { title: "Price", rangeBegin: "89,00$", rangeEnd: "1299,00$" },
 ];
 
-// export const range = []
+export const comparison = [
+  { title: "Device", placeholder: "All devices", selection: ["Option 1", "Option 2", "Option 3"] },
+  {
+    title: "Brand",
+    placeholder: "Weber",
+    selection: ["Option 2", "Option 3", "Option 4"],
+   
+  },
+  {
+    title: "Brand",
+    placeholder: "Bosch",
+    selection: ["Option 2", "Option 3", "Option 4"],
+ 
+  },
+];
