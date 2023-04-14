@@ -1,11 +1,20 @@
+import { useState } from "react";
+import { Filter } from "../components/Filter/Filter";
+import { AspectButton } from "../components/AspectButton";
+import { RadarChart } from "../components/RadarChart/RadarChart";
+import { ComparisonReviews } from "../components/Reviews/ComparisonReviews";
+
 export function Benchmark() {
+  const [displayReviews, setDisplayReviews] = useState(false);
+
   return (
     <div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, est voluptas! Magnam,
-        suscipit. Libero cum aut est. Accusantium cupiditate dolore eveniet, voluptatum corporis hic
-        autem, fugit, mollitia assumenda odio totam?
-      </p>
+      <Filter />
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        <h2 style={{ color: "#0e0e2b", display: "inline" }}>Benchmark comparison analysis: BBQ</h2>
+        <AspectButton displayReviews={displayReviews} setDisplayReviews={setDisplayReviews} />
+      </div>
+      {!displayReviews ? <RadarChart /> : <ComparisonReviews />}
     </div>
   );
 }
