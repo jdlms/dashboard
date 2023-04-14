@@ -7,7 +7,6 @@ export const config = {
   seriesField: "user",
   meta: {
     score: {
-      alias: "分数",
       min: 0,
       max: 80,
     },
@@ -36,9 +35,7 @@ export const config = {
       alternateColor: "rgba(0, 0, 0, 0.04)",
     },
   },
-  // 开启面积
   area: {},
-  // 开启辅助点
   point: {
     size: 2,
   },
