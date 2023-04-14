@@ -12,25 +12,45 @@ export function Filter() {
   return (
     <div
       className="filter-container"
-      style={{ width: 1200, marginLeft: "20px", display: "flex", alignItems: "center" }}
+      style={{ width: "80vw", marginLeft: "10px", display: "flex", alignItems: "center" }}
     >
-      {route !== "/benchmark"
-        ? catagories.map((item) => <DropMenus item={item} />)
-        : comparison.map((item) => <DropMenus item={item} />)}
-
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "300px",
+          height: "65.5px",
+        }}
+      >
+        {route !== "/benchmark"
+          ? catagories.map((item) => <DropMenus item={item} />)
+          : comparison.map((item) => <DropMenus item={item} />)}
+      </div>
       <div
         style={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          width: "350px",
+          width: "40vw",
+          alignItems: "center",
         }}
       >
-        {spans.map((item) => (
-          <Spans item={item} />
-        ))}
-      </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "300px",
+            height: "65.5px",
+          }}
+        >
+          {spans.map((item) => (
+            <Spans item={item} />
+          ))}
+        </div>
         <Button
           size="middle"
           style={{
@@ -43,6 +63,7 @@ export function Filter() {
           Clear filters
         </Button>
       </div>
+      <div style={{ display: "flex", alignItems: "center" }}></div>
     </div>
   );
 }
