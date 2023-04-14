@@ -7,7 +7,7 @@ export const data = [
   {
     item: "Quality",
     user: "Bosch",
-    score: 30,
+    score: 63,
   },
   {
     item: "Safety",
@@ -57,6 +57,6 @@ export const data = [
   {
     item: "Food Taste",
     user: "Bosch",
-    score: 50,
+    score: 60,
   },
 ];

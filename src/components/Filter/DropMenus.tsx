@@ -36,7 +36,7 @@ export function DropMenus({ item }: DropMenusProps) {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <Space>
         {item.placeholder === "Weber" && route === "/benchmark" ? (
-          <CaretLeftOutlined style={{ fontSize: "18px", color: "#0e0e2b" }} />
+          <CaretLeftOutlined style={{ fontSize: "16px", color: "#0e0e2b" }} />
         ) : null}
         <span style={{ fontWeight: 600, fontSize: "12px", marginBottom: "5px", color: "#0e0e2b" }}>
           {item.title}
